@@ -80,7 +80,7 @@ public class LoteriaCard {
     public Image getImage() {
         FileInputStream input = null;
         try {
-            input = new FileInputStream("file:./resources/" + this.imageName);
+            input = new FileInputStream("./resources/" + this.imageName);
         } catch (FileNotFoundException e) {
             //e.printStackTrace();
             System.err.println("ERROR: could not open file.");
